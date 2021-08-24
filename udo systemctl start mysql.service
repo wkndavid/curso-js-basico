@@ -1,0 +1,18 @@
+[0;1;31m●[0m mysql.service - LSB: Start and stop the mysql database server daemon
+   Loaded: loaded (/etc/init.d/mysql; generated)
+   Active: [0;1;31mfailed[0m (Result: exit-code) since Sun 2021-08-22 22:09:56 -03; 2min 1s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 7855 ExecStart=/etc/init.d/mysql start [0;1;31m(code=exited, status=1/FAILURE)[0m
+    Tasks: 39 (limit: 4490)
+   Memory: 354.8M
+   CGroup: /system.slice/mysql.service
+           ├─7881 /bin/sh /usr/bin/mysqld_safe
+           ├─7882 logger -p daemon err -t /etc/init.d/mysql -i
+           └─7941 /usr/sbin/mysqld --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/mysql/plugin --user=mysql --log-error=syntax.err --pid-file=syntax.pid
+
+ago 22 22:09:25 syntax systemd[1]: Starting LSB: Start and stop the mysql database server daemon...
+ago 22 22:09:25 syntax /etc/init.d/mysql[7882]: [0;1;31m[0;1;39m[0;1;31mLogging to '/var/lib/mysql/syntax.err'.[0m
+ago 22 22:09:56 syntax systemd[1]: [0;1;39m[0;1;31m[0;1;39mmysql.service: Control process exited, code=exited, status=1/FAILURE[0m
+ago 22 22:09:56 syntax mysql[7855]: Starting MariaDB database server: mysqld . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . failed!
+ago 22 22:09:56 syntax systemd[1]: [0;1;39m[0;1;31m[0;1;39mmysql.service: Failed with result 'exit-code'.[0m
+ago 22 22:09:56 syntax systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start LSB: Start and stop the mysql database server daemon.[0m
