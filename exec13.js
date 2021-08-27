@@ -25,7 +25,7 @@ switch (diaSem) {
         console.log('Hoje é Quarta-Feira !')
         break
     case 4:
-        console.log('Hoje é Quint-Feira !')
+        console.log('Hoje é Quinta-Feira !')
         break
     case 5:
         console.log('Hoje é Sexta-Feira !')
