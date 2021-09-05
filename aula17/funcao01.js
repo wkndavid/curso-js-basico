@@ -1,8 +1,8 @@
 function parimpar(n){
     if(n%2 == 0){
-    return 'par'
+    return 'Par'
 } else{
-    return 'impar'
+    return 'Ímpar'
 }
 }
 let res = parimpar(4)
